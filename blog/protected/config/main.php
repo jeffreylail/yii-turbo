@@ -21,7 +21,7 @@ return array(
 	'modules'=>array(
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'resident',
+			'password'=>'redplayer',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			
 			'ipFilters'=>array('127.0.0.1','::1'),
@@ -47,7 +47,7 @@ return array(
 		),
 		*/
 		'db'=>array(
-			'connectionString' => 'sqlite:/yii-turbo/blog/protected/data/blog.db',
+			'connectionString' => 'sqlite:/Users/jeffreylail/Desktop/yii-turbo/blog/protected/data/blog.db',
 			'tablePrefix'=>'tbl_',
 		),
 		// uncomment the following to use a MySQL database
