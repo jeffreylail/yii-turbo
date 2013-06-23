@@ -194,3 +194,13 @@ Stack trace:
 REQUEST_URI=/blog/index.php?r=gii/model
 HTTP_REFERER=http://localhost:8888/blog/index.php?r=gii
 ---
+2013/06/22 19:14:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "post".' in /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php:483
+Stack trace:
+#0 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(270): CController->missingAction('post')
+#1 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(282): CController->run('post')
+#2 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(141): CWebApplication->runController('site/post')
+#3 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Users/jeffreylail/Desktop/yii-turbo/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/index.php?r=site/post
+---
