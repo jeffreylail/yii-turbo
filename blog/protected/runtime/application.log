@@ -1,206 +1,404 @@
-2013/06/19 20:13:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php:381
+2013/06/26 21:19:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post".' in /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php:286
 Stack trace:
-#0 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(330): CDbConnection->open()
-#1 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
-#2 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(387): CDbConnection->init()
-#3 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(103): CModule->getComponent('db')
-#4 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
-#5 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CFormModel.php(39): ModelCode->init()
-#6 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
-#7 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
-#8 /Users/jeffreylail/Desktop/yii-turbo/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
-#9 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#10 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#11 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#12 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(282): CController->run('')
-#13 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
-#14 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CApplication.php(169): CWebApplication->processRequest()
-#15 /Users/jeffreylail/Desktop/yii-turbo/blog/index.php(13): CApplication->run()
-#16 {main}
-REQUEST_URI=/blog/index.php?r=gii/model
-HTTP_REFERER=http://localhost:8888/blog/index.php?r=gii/default/index
+#0 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post')
+#1 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php?r=post
 ---
-2013/06/19 20:14:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php:381
+2013/06/26 21:19:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php:286
 Stack trace:
-#0 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(330): CDbConnection->open()
-#1 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
-#2 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(387): CDbConnection->init()
-#3 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(103): CModule->getComponent('db')
-#4 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
-#5 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CFormModel.php(39): ModelCode->init()
-#6 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
-#7 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
-#8 /Users/jeffreylail/Desktop/yii-turbo/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
-#9 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#10 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#11 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#12 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(282): CController->run('')
-#13 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
-#14 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CApplication.php(169): CWebApplication->processRequest()
-#15 /Users/jeffreylail/Desktop/yii-turbo/blog/index.php(13): CApplication->run()
-#16 {main}
-REQUEST_URI=/blog/index.php?r=gii/model
+#0 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment')
+#1 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php?r=comment
 ---
-2013/06/19 20:14:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php:381
+2013/06/26 21:29:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php:381
 Stack trace:
-#0 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(330): CDbConnection->open()
-#1 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
-#2 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(387): CDbConnection->init()
-#3 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(103): CModule->getComponent('db')
-#4 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
-#5 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CFormModel.php(39): ModelCode->init()
-#6 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
-#7 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
-#8 /Users/jeffreylail/Desktop/yii-turbo/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
-#9 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#10 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#11 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#12 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(282): CController->run('')
-#13 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
-#14 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CApplication.php(169): CWebApplication->processRequest()
-#15 /Users/jeffreylail/Desktop/yii-turbo/blog/index.php(13): CApplication->run()
-#16 {main}
-REQUEST_URI=/blog/index.php?r=gii/model
----
-2013/06/19 20:14:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php:381
-Stack trace:
-#0 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(330): CDbConnection->open()
-#1 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
-#2 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(387): CDbConnection->init()
-#3 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(103): CModule->getComponent('db')
-#4 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
-#5 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CFormModel.php(39): ModelCode->init()
-#6 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
-#7 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
-#8 /Users/jeffreylail/Desktop/yii-turbo/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
-#9 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#10 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#11 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#12 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(282): CController->run('')
-#13 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
-#14 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CApplication.php(169): CWebApplication->processRequest()
-#15 /Users/jeffreylail/Desktop/yii-turbo/blog/index.php(13): CApplication->run()
+#0 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/jeffreylail/Desktop/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Users/jeffreylail/Desktop/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
 #16 {main}
 REQUEST_URI=/blog/index.php?r=gii/model
 HTTP_REFERER=http://localhost:8888/blog/index.php?r=gii
 ---
-2013/06/19 20:15:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php:381
+2013/06/26 21:30:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php:381
 Stack trace:
-#0 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(330): CDbConnection->open()
-#1 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
-#2 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(387): CDbConnection->init()
-#3 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(103): CModule->getComponent('db')
-#4 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
-#5 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CFormModel.php(39): ModelCode->init()
-#6 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
-#7 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
-#8 /Users/jeffreylail/Desktop/yii-turbo/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
-#9 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#10 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#11 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#12 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(282): CController->run('')
-#13 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
-#14 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CApplication.php(169): CWebApplication->processRequest()
-#15 /Users/jeffreylail/Desktop/yii-turbo/blog/index.php(13): CApplication->run()
+#0 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/jeffreylail/Desktop/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Users/jeffreylail/Desktop/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=gii/model
+---
+2013/06/26 21:30:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/jeffreylail/Desktop/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Users/jeffreylail/Desktop/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
 #16 {main}
 REQUEST_URI=/blog/index.php?r=gii/model
 HTTP_REFERER=http://localhost:8888/blog/index.php?r=gii
 ---
-2013/06/19 20:15:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php:381
+2013/06/26 21:31:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php:381
 Stack trace:
-#0 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(330): CDbConnection->open()
-#1 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
-#2 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(387): CDbConnection->init()
-#3 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(103): CModule->getComponent('db')
-#4 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
-#5 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CFormModel.php(39): ModelCode->init()
-#6 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
-#7 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
-#8 /Users/jeffreylail/Desktop/yii-turbo/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
-#9 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#10 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#11 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#12 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(282): CController->run('')
-#13 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
-#14 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CApplication.php(169): CWebApplication->processRequest()
-#15 /Users/jeffreylail/Desktop/yii-turbo/blog/index.php(13): CApplication->run()
+#0 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/jeffreylail/Desktop/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Users/jeffreylail/Desktop/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=gii/model
+---
+2013/06/26 21:31:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/jeffreylail/Desktop/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Users/jeffreylail/Desktop/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
 #16 {main}
 REQUEST_URI=/blog/index.php?r=gii/model
 HTTP_REFERER=http://localhost:8888/blog/index.php?r=gii
 ---
-2013/06/19 20:15:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php:381
+2013/06/26 21:32:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php:381
 Stack trace:
-#0 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(330): CDbConnection->open()
-#1 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
-#2 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(387): CDbConnection->init()
-#3 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(103): CModule->getComponent('db')
-#4 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
-#5 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CFormModel.php(39): ModelCode->init()
-#6 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
-#7 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
-#8 /Users/jeffreylail/Desktop/yii-turbo/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
-#9 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#10 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#11 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#12 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(282): CController->run('')
-#13 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
-#14 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CApplication.php(169): CWebApplication->processRequest()
-#15 /Users/jeffreylail/Desktop/yii-turbo/blog/index.php(13): CApplication->run()
+#0 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/jeffreylail/Desktop/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Users/jeffreylail/Desktop/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=gii/model
+---
+2013/06/26 21:32:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/jeffreylail/Desktop/yii/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /Users/jeffreylail/Desktop/yii/framework/web/CFormModel.php(39): CrudCode->init()
+#6 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=gii/crud
+HTTP_REFERER=http://localhost:8888/blog/index.php?r=gii
+---
+2013/06/26 21:33:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/jeffreylail/Desktop/yii/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /Users/jeffreylail/Desktop/yii/framework/web/CFormModel.php(39): CrudCode->init()
+#6 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=gii/crud
+---
+2013/06/26 21:34:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/jeffreylail/Desktop/yii/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /Users/jeffreylail/Desktop/yii/framework/web/CFormModel.php(39): CrudCode->init()
+#6 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=gii/crud
+---
+2013/06/26 21:34:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/jeffreylail/Desktop/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Users/jeffreylail/Desktop/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
 #16 {main}
 REQUEST_URI=/blog/index.php?r=gii/model
 HTTP_REFERER=http://localhost:8888/blog/index.php?r=gii
 ---
-2013/06/19 20:15:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php:381
+2013/06/26 21:34:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php:381
 Stack trace:
-#0 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(330): CDbConnection->open()
-#1 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
-#2 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(387): CDbConnection->init()
-#3 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(103): CModule->getComponent('db')
-#4 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
-#5 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CFormModel.php(39): ModelCode->init()
-#6 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
-#7 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
-#8 /Users/jeffreylail/Desktop/yii-turbo/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
-#9 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#10 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#11 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#12 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(282): CController->run('')
-#13 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
-#14 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CApplication.php(169): CWebApplication->processRequest()
-#15 /Users/jeffreylail/Desktop/yii-turbo/blog/index.php(13): CApplication->run()
+#0 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/jeffreylail/Desktop/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Users/jeffreylail/Desktop/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
 #16 {main}
 REQUEST_URI=/blog/index.php?r=gii/model
-HTTP_REFERER=http://localhost:8888/blog/index.php?r=gii
 ---
-2013/06/19 20:15:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php:381
+2013/06/26 21:34:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php:381
 Stack trace:
-#0 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(330): CDbConnection->open()
-#1 /Users/jeffreylail/Desktop/yii-turbo/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
-#2 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(387): CDbConnection->init()
-#3 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CModule.php(103): CModule->getComponent('db')
-#4 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
-#5 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CFormModel.php(39): ModelCode->init()
-#6 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
-#7 /Users/jeffreylail/Desktop/yii-turbo/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
-#8 /Users/jeffreylail/Desktop/yii-turbo/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
-#9 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#10 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#11 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#12 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(282): CController->run('')
-#13 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
-#14 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CApplication.php(169): CWebApplication->processRequest()
-#15 /Users/jeffreylail/Desktop/yii-turbo/blog/index.php(13): CApplication->run()
+#0 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/jeffreylail/Desktop/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Users/jeffreylail/Desktop/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
 #16 {main}
 REQUEST_URI=/blog/index.php?r=gii/model
-HTTP_REFERER=http://localhost:8888/blog/index.php?r=gii
 ---
-2013/06/22 19:14:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "post".' in /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php:483
+2013/06/26 21:34:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [14] unable to open database file' in /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php:381
 Stack trace:
-#0 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CController.php(270): CController->missingAction('post')
-#1 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(282): CController->run('post')
-#2 /Users/jeffreylail/Desktop/yii-turbo/framework/web/CWebApplication.php(141): CWebApplication->runController('site/post')
-#3 /Users/jeffreylail/Desktop/yii-turbo/framework/base/CApplication.php(169): CWebApplication->processRequest()
-#4 /Users/jeffreylail/Desktop/yii-turbo/blog/index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/blog/index.php?r=site/post
+#0 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/jeffreylail/Desktop/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Users/jeffreylail/Desktop/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/jeffreylail/Desktop/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=gii/model
+---
+2013/06/26 21:36:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post".' in /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post')
+#1 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php?r=post
+---
+2013/06/26 21:36:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment')
+#1 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php?r=comment
+---
+2013/06/26 21:36:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user')
+#1 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php?r=user
+---
+2013/06/26 21:38:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post".' in /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post')
+#1 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php?r=post
+---
+2013/06/26 21:59:51 [error] [php] include(normalizeTags.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/jeffreylail/Desktop/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /Users/jeffreylail/Desktop/yii/framework/validators/CValidator.php(186): import()
+#1 /Users/jeffreylail/Desktop/yii/framework/base/CModel.php(286): createValidator()
+#2 /Users/jeffreylail/Desktop/yii/framework/base/CModel.php(260): Post->createValidators()
+#3 /Users/jeffreylail/Desktop/yii/framework/base/CModel.php(303): Post->getValidators()
+#4 /Users/jeffreylail/Desktop/yii/framework/web/helpers/CHtml.php(1237): Post->isAttributeRequired()
+#5 /Users/jeffreylail/Desktop/yii/framework/web/widgets/CActiveForm.php(562): activeLabelEx()
+#6 /Users/jeffreylail/Desktop/yii/blog/protected/views/post/_form.php(19): CActiveForm->labelEx()
+#7 /Users/jeffreylail/Desktop/yii/framework/web/CBaseController.php(126): require()
+#8 /Users/jeffreylail/Desktop/yii/framework/web/CBaseController.php(95): PostController->renderInternal()
+#9 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(869): PostController->renderFile()
+#10 /Users/jeffreylail/Desktop/yii/blog/protected/views/post/create.php(18): PostController->renderPartial()
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CBaseController.php(126): require()
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CBaseController.php(95): PostController->renderInternal()
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(869): PostController->renderFile()
+#14 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(782): PostController->renderPartial()
+#15 /Users/jeffreylail/Desktop/yii/blog/protected/controllers/PostController.php(79): PostController->render()
+#16 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#17 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /Users/jeffreylail/Desktop/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#19 /Users/jeffreylail/Desktop/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#21 /Users/jeffreylail/Desktop/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#22 /Users/jeffreylail/Desktop/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#23 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(291): CFilterChain->run()
+#24 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#25 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): PostController->run()
+#26 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#28 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/create
+in /Users/jeffreylail/Desktop/yii/blog/protected/views/post/_form.php (19)
+in /Users/jeffreylail/Desktop/yii/blog/protected/views/post/create.php (18)
+in /Users/jeffreylail/Desktop/yii/blog/protected/controllers/PostController.php (79)
+2013/06/26 22:02:29 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /Users/jeffreylail/Desktop/yii/blog/protected/controllers/PostController.php (72)
+in /Users/jeffreylail/Desktop/yii/blog/index.php (13)
+2013/06/26 22:02:29 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /Users/jeffreylail/Desktop/yii/blog/protected/controllers/PostController.php (72)
+in /Users/jeffreylail/Desktop/yii/blog/index.php (13)
+2013/06/26 22:02:29 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /Users/jeffreylail/Desktop/yii/blog/protected/controllers/PostController.php (72)
+in /Users/jeffreylail/Desktop/yii/blog/index.php (13)
+2013/06/26 22:03:07 [warning] [application] Failed to set unsafe attribute "create_time" of "Post".
+in /Users/jeffreylail/Desktop/yii/blog/protected/controllers/PostController.php (72)
+in /Users/jeffreylail/Desktop/yii/blog/index.php (13)
+2013/06/26 22:03:07 [warning] [application] Failed to set unsafe attribute "update_time" of "Post".
+in /Users/jeffreylail/Desktop/yii/blog/protected/controllers/PostController.php (72)
+in /Users/jeffreylail/Desktop/yii/blog/index.php (13)
+2013/06/26 22:03:07 [warning] [application] Failed to set unsafe attribute "author_id" of "Post".
+in /Users/jeffreylail/Desktop/yii/blog/protected/controllers/PostController.php (72)
+in /Users/jeffreylail/Desktop/yii/blog/index.php (13)
+2013/06/26 22:03:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 19 tbl_post.author_id may not be NULL. The SQL statement executed was: INSERT INTO 'tbl_post' ("title", "content", "tags", "status") VALUES (:yp0, :yp1, :yp2, :yp3).
+in /Users/jeffreylail/Desktop/yii/blog/protected/controllers/PostController.php (73)
+in /Users/jeffreylail/Desktop/yii/blog/index.php (13)
+2013/06/26 22:03:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 19 tbl_post.author_id may not be NULL. The SQL statement executed was: INSERT INTO 'tbl_post' ("title", "content", "tags", "status") VALUES (:yp0, :yp1, :yp2, :yp3)' in /Users/jeffreylail/Desktop/yii/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /Users/jeffreylail/Desktop/yii/framework/db/ar/CActiveRecord.php(1023): CDbCommand->execute()
+#1 /Users/jeffreylail/Desktop/yii/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 /Users/jeffreylail/Desktop/yii/blog/protected/controllers/PostController.php(73): CActiveRecord->save()
+#3 /Users/jeffreylail/Desktop/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#4 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/jeffreylail/Desktop/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/jeffreylail/Desktop/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/jeffreylail/Desktop/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/jeffreylail/Desktop/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/jeffreylail/Desktop/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /Users/jeffreylail/Desktop/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#14 /Users/jeffreylail/Desktop/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/jeffreylail/Desktop/yii/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=post/create
+HTTP_REFERER=http://localhost:8888/blog/index.php?r=post/create
 ---
